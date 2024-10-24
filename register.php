@@ -1,4 +1,8 @@
-<?php  require_once(".\layout\header.php") ?>
+<?php  
+require_once(".\layout\header.php") 
+//require_once(".\app\User.php");
+
+?>
     please register first
 
 <h1>Registration</h1>

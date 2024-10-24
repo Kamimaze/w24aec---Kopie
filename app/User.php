@@ -1,17 +1,20 @@
 <?php
 
 class User {
-    public string $body;
-    public ?string $senderName;
+    public string $id;
+    public string $email;
 
-    public ?string $senderEmail;
-    public ?string $mobileNumber;
+    public string $password;
+    public string $firstName;
+    public string $lastName;
 
     public function __construct()
     {
-        $this->senderName = null;
-        $this->senderEmail = null;
-        $this->mobileNumber = null;
+        $this->id = null;
+        $this->email = null;
+        $this->password = null;
+        $this->firstName = null;
+        $this->lastName = null;
     }
     public function send():bool{
         return false;

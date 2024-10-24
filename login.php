@@ -1,26 +1,7 @@
 <?php  
 require_once(".\layout\header.php")
-require_once(".\app\User.php");
+//require_once(".\app\User.php");
 
-if(isset($_POST["body"]))
-{
-    $visitor_message = new User();
-    $visitor_message->body = $_POST["body"];
-    $visitor_message->mobileNumber = $_POST["visitor_phone_number"];
-    $visitor_message->senderEmail = $_POST["visitor_email"];
-    $visitor_message->senderName = $_POST["visitor_name"];    
-    unset($_POST);
-    
-    $send_result = $visitor_message->send(); 
-    if($send_result){
-        echo "successful sended message";
-    }
-    else
-    {
-        echo "sorry try later!";
-    }
-
-}
 ?>
         
 
